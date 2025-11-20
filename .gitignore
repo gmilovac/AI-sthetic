@@ -1,0 +1,17 @@
+# Standard Python dependencies
+__pycache__/
+*.pyc
+venv/
+.ipynb_checkpoints
+
+# --------------------------
+# Data and Cache Exclusion
+# --------------------------
+
+# Ignore all raw images and data artifacts
+# We only commit the Python scripts and the smaller metadata file.
+data/images/
+data/AVA_Files/
+
+# Ignore the TensorFlow cache file created by data_pipeline.py
+tf_cache/
